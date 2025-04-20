@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import joblib
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -40,5 +41,6 @@ def symptoms_to_features(symptom_text):
     text = symptom_text.lower()
     return [1 if symptom in text else 0 for symptom in symptom_list]
 
-if __name__ == '__main__':
-    app.run(port=5001)
+if __name__ == "__main__":
+    # Render automatically provides the PORT environment variable
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
