@@ -40,5 +40,7 @@ def symptoms_to_features(symptom_text):
     text = symptom_text.lower()
     return [1 if symptom in text else 0 for symptom in symptom_list]
 
+import os
 if __name__ == '__main__':
-    app.run(port=5001)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+
