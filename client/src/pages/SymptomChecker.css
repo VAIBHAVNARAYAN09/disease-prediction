@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f7fa, #f8f9fa);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.symptom-checker {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.symptom-checker:hover {
+  transform: translateY(-3px);
+}
+
+.header-img {
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.subtext {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+textarea {
+  width: 100%;
+  height: 130px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  resize: none;
+  outline: none;
+  transition: border 0.2s;
+}
+
+textarea:focus {
+  border-color: #3f51b5;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(63, 81, 181, 0.3);
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #303f9f;
+  transform: scale(1.02);
+}
+
+.result {
+  margin-top: 25px;
+  padding: 20px;
+  background: #e8f0fe;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
